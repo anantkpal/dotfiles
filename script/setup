@@ -1,0 +1,30 @@
+#!/bin/sh
+# copies dot files into users home
+
+CURENT_DIR=$(pwd -P)
+cd $CURENT_DIR/..
+DOTFILES_DIR=$(pwd -P)
+for DOTFILE in *; do
+    HOME_DOT_FILE="$HOME/.$DOTFILE"
+    DOTFILE_PATH="$DOTFILES_DIR/$DOTFILE"
+
+    # Don't copy  current folder, text and md
+    echo $DOTFILE | egrep -q '(^script$|\.txt$|\.md$)' && continue
+
+    if [ -L "$HOME_DOT_FILE" ] && ! [ -d $DOTFILE ]
+    then
+      ln -sfv "$DOTFILE_PATH" "$HOME_DOT_FILE"
+    else
+      rm -rv "$HOME_DOT_FILE"
+      ln -sv "$DOTFILE_PATH" "$HOME_DOT_FILE"
+    fi
+done
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Back to same directory
+cd -
+
+
+
+
