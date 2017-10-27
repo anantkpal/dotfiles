@@ -45,4 +45,5 @@ cask "sublime-text"
 cask "tunnelblick"
 cask "flux"
 cask "spectacle"
+cask "alfred"
 mas "Xcode", id: 497799835
