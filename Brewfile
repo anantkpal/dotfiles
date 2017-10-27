@@ -41,4 +41,8 @@ cask "keepingyouawake"
 cask "vagrant"
 cask "zoomus"
 cask "iterm2"
+cask "sublime-text"
+cask "tunnelblick"
+cask "flux"
+cask "spectacle"
 mas "Xcode", id: 497799835
