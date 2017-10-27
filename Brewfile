@@ -46,4 +46,6 @@ cask "tunnelblick"
 cask "flux"
 cask "spectacle"
 cask "alfred"
+cask "intellij-idea"
+cask "pycharm"
 mas "Xcode", id: 497799835
