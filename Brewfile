@@ -7,8 +7,6 @@ tap "homebrew/services"
 tap "caskroom/cask"
 cask "java"
 brew "alexjs"
-brew "analog"
-brew "angolmois"
 brew "autoconf"
 brew "elasticsearch@2.4", restart_service: true, link: true
 brew "git"
