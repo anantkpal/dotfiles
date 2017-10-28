@@ -5,6 +5,8 @@ tap "homebrew/test-bot"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "caskroom/cask"
+tap 'github/bootstrap'
+tap 'caskroom/versions'
 cask "java"
 brew "alexjs"
 brew "autoconf"
@@ -18,7 +20,6 @@ brew "hub"
 brew "jenv"
 brew "gradle"
 brew "imagemagick"
-brew "dnsmasq", restart_service: true
 brew "libyaml"
 brew "mas"
 brew "memcached", restart_service: true
@@ -35,7 +36,12 @@ brew "ruby"
 brew "wget"
 brew "zsh"
 brew "zsh-completions"
-cask "docker"
+brew 'awscli'
+brew 'amazon-ecs-cli'
+
+cask 'docker'
+cask 'docker-toolbox'
+
 cask "google-chrome"
 cask "keepingyouawake"
 cask "vagrant"
@@ -46,4 +52,5 @@ cask "tunnelblick"
 cask "flux"
 cask "spectacle"
 cask "alfred"
+
 mas "Xcode", id: 497799835
