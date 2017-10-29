@@ -49,6 +49,7 @@ brew "awscli"
 brew "amazon-ecs-cli"
 
 brew "xhyve"
+brew "kubectl"
 cask 'docker'
 cask 'docker-toolbox'
 
