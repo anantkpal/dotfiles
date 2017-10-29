@@ -1,4 +1,3 @@
-tap "homebrew/science"
 tap "homebrew/core"
 tap "homebrew/dev-tools"
 tap "homebrew/test-bot"
@@ -7,50 +6,65 @@ tap "homebrew/services"
 tap "caskroom/cask"
 tap 'github/bootstrap'
 tap 'caskroom/versions'
+
+# languages
 cask "java"
-brew "alexjs"
-brew "autoconf"
-brew "elasticsearch@2.4", restart_service: true, link: true
-brew "git"
 brew "go"
-brew "openssl"
 brew "python3"
-brew "heroku"
-brew "hub"
+
+# version managers
 brew "jenv"
+brew "nodenv"
+
+# Build
 brew "gradle"
+brew "autoconf"
+
+# Version Control
+brew "git"
+brew "hub"
+
+
+brew "alexjs"
+brew "openssl"
+brew "heroku"
 brew "imagemagick"
 brew "libyaml"
 brew "mas"
-brew "memcached", restart_service: true
-brew "mongodb@3.2", restart_service: true, link: true
-brew "mysql@5.6", restart_service: true, link: true
-brew "nginx", restart_service: true
-brew "nodenv"
-brew "postgresql", restart_service: true
+brew "wget"
+
+# Ruby
 brew "ruby-build"
 brew "rbenv"
 brew "rbenv-default-gems"
-brew "redis", restart_service: true
 brew "ruby"
-brew "wget"
+
+
+# ZSH
 brew "zsh"
 brew "zsh-completions"
-brew 'awscli'
-brew 'amazon-ecs-cli'
 
+# AWS tools
+brew "awscli"
+brew "amazon-ecs-cli"
+
+brew "xhyve"
 cask 'docker'
 cask 'docker-toolbox'
 
 cask "google-chrome"
-cask "keepingyouawake"
 cask "vagrant"
-cask "zoomus"
 cask "iterm2"
 cask "sublime-text"
 cask "tunnelblick"
+
+# Productivity
 cask "flux"
 cask "spectacle"
 cask "alfred"
+cask "keepingyouawake"
+
+# Communication
+cask "zoomus"
 
 mas "Xcode", id: 497799835
