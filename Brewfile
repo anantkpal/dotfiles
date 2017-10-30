@@ -54,6 +54,7 @@ cask 'docker'
 cask 'docker-toolbox'
 
 cask "google-chrome"
+cask "firefox"
 cask "vagrant"
 cask "iterm2"
 cask "sublime-text"
