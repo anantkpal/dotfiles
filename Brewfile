@@ -6,6 +6,7 @@ tap "homebrew/services"
 tap "caskroom/cask"
 tap 'github/bootstrap'
 tap 'caskroom/versions'
+tap "nodenv/nodenv"
 
 # languages
 cask "java"
@@ -15,6 +16,7 @@ brew "python3"
 # version managers
 brew "jenv"
 brew "nodenv"
+brew "nodenv-package-json-engine"
 
 # Build
 brew "gradle"
