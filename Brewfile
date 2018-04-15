@@ -20,14 +20,13 @@ brew "nodenv-package-json-engine"
 
 # Build
 brew "gradle"
+brew "maven"
 brew "autoconf"
 
 # Version Control
 brew "git"
 brew "hub"
 
-
-brew "alexjs"
 brew "openssl"
 brew "heroku"
 brew "imagemagick"

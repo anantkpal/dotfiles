@@ -20,7 +20,7 @@ for DOTFILE in *; do
     DOTFILE_PATH="$DOTFILES_DIR/$DOTFILE"
 
     # Don't copy  current folder, text and md
-    echo $DOTFILE | egrep -q '(^script$|\.txt$|\.md$)' && continue
+    echo $DOTFILE | egrep -q '(^script$|\.txt$|\.md$|\.sh$)' && continue
 
     if [ -L "$HOME_DOT_FILE" ] && ! [ -d $DOTFILE ]
     then
