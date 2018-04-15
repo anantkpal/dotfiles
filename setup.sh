@@ -1,9 +1,20 @@
 #!/bin/sh
 # copies dot files into users home
 
+echo "Validate whether brew is installed "
+which -s brew
+if [[ $? != 0 ]] ; then
+    echo "Install brew"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+    echo "Update brew..."
+    brew update
+fi
+
+
 CURENT_DIR=$(pwd -P)
-cd $CURENT_DIR/..
 DOTFILES_DIR=$(pwd -P)
+echo "Create symlink for dotfiles..."
 for DOTFILE in *; do
     HOME_DOT_FILE="$HOME/.$DOTFILE"
     DOTFILE_PATH="$DOTFILES_DIR/$DOTFILE"
@@ -20,10 +31,15 @@ for DOTFILE in *; do
     fi
 done
 
+echo "Install bundle"
+
+brew bundle
+
+echo "Setup Oh My Zsh..."
+
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Back to same directory
-cd -
+
 
 
 
