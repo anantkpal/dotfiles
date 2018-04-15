@@ -3,7 +3,7 @@ My dot files shared between machines
 
 
 ## Installation
-Run [`script/setup`](https://github.com/anantkpal/dotfiles/blob/master/script/setup)
+Run [`./setup.sh`](https://github.com/anantkpal/dotfiles/blob/master/setup.sh)
 
 
 ## Thanks to..
