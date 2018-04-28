@@ -50,7 +50,9 @@ brew "awscli"
 brew "amazon-ecs-cli"
 
 brew "xhyve"
+cask "minikube"
 brew "kubectl"
+brew "kops"
 cask 'docker'
 cask 'docker-toolbox'
 

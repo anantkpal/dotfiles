@@ -1,5 +1,7 @@
 [user]
     name = Anant Pal
     email = anantkpal@yahoo.co.in
+[core]
+    excludesfile = ~/.gitignore
 [github]
     user = anantkpal
