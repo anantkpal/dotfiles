@@ -12,6 +12,8 @@ tap "nodenv/nodenv"
 cask "java"
 brew "go"
 brew "python3"
+brew "scala"
+brew "sbt"
 
 # version managers
 brew "jenv"
@@ -60,8 +62,10 @@ cask "google-chrome"
 cask "firefox"
 cask "vagrant"
 cask "iterm2"
+brew "TomAnthony/brews/itermocil"
 cask "sublime-text"
 cask "tunnelblick"
+brew "md5sha1sum"
 
 # Productivity
 cask "flux"
