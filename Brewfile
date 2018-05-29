@@ -55,6 +55,7 @@ brew "xhyve"
 cask "minikube"
 brew "kubectl"
 brew "kops"
+brew "skaffold"
 cask 'docker'
 cask 'docker-toolbox'
 
