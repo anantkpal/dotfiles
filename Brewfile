@@ -7,6 +7,8 @@ tap "caskroom/cask"
 tap 'github/bootstrap'
 tap 'caskroom/versions'
 tap "nodenv/nodenv"
+tap "jenkins-x/jx"
+tap "tomanthony/brews"
 
 # languages
 cask "java"
@@ -42,6 +44,8 @@ brew "rbenv"
 brew "rbenv-default-gems"
 brew "ruby"
 
+# Typescript
+brew "typescript"
 
 # ZSH
 brew "zsh"
@@ -54,16 +58,19 @@ brew "amazon-ecs-cli"
 brew "xhyve"
 cask "minikube"
 brew "kubectl"
+brew "kubernetes-helm"
 brew "kops"
+brew "jenkins-x/jx/jx"
 brew "skaffold"
-cask 'docker'
-cask 'docker-toolbox'
+cask "docker"
+cask "docker-toolbox"
+cask "android-sdk"
 
 cask "google-chrome"
 cask "firefox"
 cask "vagrant"
 cask "iterm2"
-brew "TomAnthony/brews/itermocil"
+brew "tomanthony/brews/itermocil"
 cask "sublime-text"
 cask "tunnelblick"
 brew "md5sha1sum"
