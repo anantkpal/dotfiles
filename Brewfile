@@ -13,6 +13,7 @@ tap "tomanthony/brews"
 # languages
 cask "java"
 brew "go"
+brew "dep"
 brew "python3"
 brew "scala"
 brew "sbt"
@@ -80,6 +81,7 @@ cask "flux"
 cask "spectacle"
 cask "alfred"
 cask "keepingyouawake"
+cask "postman"
 
 # Communication
 cask "zoomus"
