@@ -38,6 +38,7 @@ brew "imagemagick"
 brew "libyaml"
 brew "mas"
 brew "wget"
+brew "bats"
 
 # Ruby
 brew "ruby-build"
