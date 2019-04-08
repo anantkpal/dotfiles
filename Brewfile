@@ -17,6 +17,7 @@ brew "dep"
 brew "python3"
 brew "scala"
 brew "sbt"
+brew "groovysdk"
 
 # version managers
 brew "jenv"
