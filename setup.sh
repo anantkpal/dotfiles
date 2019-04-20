@@ -39,10 +39,9 @@ echo "Setup Oh My Zsh..."
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions > /dev/null 2>&1
 
-pip install virtualenvwrapper
-
+pip install virtualenvwrapper > /dev/null 2>&1
 
 
 
