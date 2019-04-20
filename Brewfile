@@ -30,11 +30,16 @@ brew "gradle"
 brew "maven"
 brew "autoconf"
 
+# Python
+brew "pyenv"
+brew "pipenv"
+
 # Version Control
 brew "git"
 brew "hub"
 
 brew "openssl"
+brew "zlib"
 brew "heroku"
 brew "imagemagick"
 brew "libyaml"

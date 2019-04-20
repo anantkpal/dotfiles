@@ -35,6 +35,10 @@ echo "Install bundle"
 
 brew bundle
 
+
+# https://github.com/pyenv/pyenv/wiki#suggested-build-environment - makes python build works
+sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+
 echo "Setup Oh My Zsh..."
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -43,5 +47,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 
 pip install virtualenvwrapper > /dev/null 2>&1
 
-
+for java_home in /Library/Java/JavaVirtualMachines/*; do
+ jenv add "$java_home/Contents/Home"
+done
 
