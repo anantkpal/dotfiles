@@ -9,6 +9,7 @@ tap 'caskroom/versions'
 tap "nodenv/nodenv"
 tap "jenkins-x/jx"
 tap "tomanthony/brews"
+tap "blendle/blendle"
 
 # languages
 cask "java"
@@ -63,6 +64,8 @@ cask "minikube"
 brew "kubectl"
 brew "kubernetes-helm"
 brew "kops"
+brew "azure-cli"
+brew "kns"
 brew "jenkins-x/jx/jx"
 brew "skaffold"
 brew "packer"
