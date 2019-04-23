@@ -36,6 +36,10 @@ echo "Install bundle"
 brew bundle
 
 
+echo "Install xcode command line tools"
+
+xcode-select --install
+
 # https://github.com/pyenv/pyenv/wiki#suggested-build-environment - makes python build works
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 
@@ -47,7 +51,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 
 pip install virtualenvwrapper > /dev/null 2>&1
 
+echo "configuring java env"
 for java_home in /Library/Java/JavaVirtualMachines/*; do
  jenv add "$java_home/Contents/Home"
 done
-
