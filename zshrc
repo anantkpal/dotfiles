@@ -2,11 +2,11 @@
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bureau"
 plugins=(rails git textmate ruby lighthouse)
-
+unsetopt nomatch
 export JENV_ROOT=$HOME/.jenv
 export PYENV_ROOT=$HOME/.pyenv
 
-export PATH="$PYENV_ROOT/bin:$(pyenv root)/shims:$HOME/.jenv/bin:$HOME/.jenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:$HOME/.jenv/bin:$HOME/.jenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.UTF-8
@@ -20,6 +20,7 @@ for kubefile in ~/.kube/*.json ; do
  export KUBECONFIG=$KUBECONFIG:$kubefile
 done
 
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
@@ -27,6 +28,13 @@ venv() {
    dir_name=$(basename "$PWD")
    if [[ ! -d $WORKON_HOME/$dir_name ]]; then
         mkvirtualenv $dir_name --python=$(which python3) -a $(pwd)
+   fi
+}
+
+venv2() {
+   dir_name=$(basename "$PWD")
+   if [[ ! -d $WORKON_HOME/$dir_name ]]; then
+        mkvirtualenv $dir_name --python=$(which python) -a $(pwd)
    fi
 }
 
