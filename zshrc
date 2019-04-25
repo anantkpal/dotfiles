@@ -8,7 +8,7 @@ export PYENV_ROOT=$HOME/.pyenv
 
 export PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:$HOME/.jenv/bin:$HOME/.jenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source $ZSH/oh-my-zsh.sh
-
+export SHELL=/bin/bash
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -22,6 +22,7 @@ done
 
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_HOOK_DIR=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
 venv() {
@@ -58,7 +59,7 @@ cd() {
    builtin cd $1
    dir_name=$(basename "$PWD")
    project_type=$(get_project_type)
-   init_project $project_type $dir_name
+#   init_project $project_type $dir_name
 }
 
 
