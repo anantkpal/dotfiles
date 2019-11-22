@@ -75,7 +75,9 @@ brew "kns"
 brew "jenkins-x/jx/jx"
 brew "skaffold"
 brew "packer"
-brew "terraform"
+
+brew "tfenv"
+
 cask "docker"
 cask "docker-toolbox"
 cask "android-sdk"
