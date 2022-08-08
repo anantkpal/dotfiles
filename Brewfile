@@ -35,7 +35,6 @@ brew "pipenv"
 
 # Version Control
 brew "git"
-brew "hub"
 
 brew "oath-toolkit"
 brew "cookiecutter"
@@ -63,12 +62,10 @@ brew "zsh-completions"
 
 # AWS tools
 brew "awscli"
-brew "amazon-ecs-cli"
 
 brew "xhyve"
-cask "minikube"
 brew "kubectl"
-brew "kubernetes-helm"
+brew "helm"
 brew "kops"
 brew "azure-cli"
 brew "kns"
@@ -78,12 +75,12 @@ brew "packer"
 
 brew "tfenv"
 
-cask "docker"
-cask "docker-toolbox"
+brew "docker-compose"
+cask "rancher"
 cask "android-sdk"
 
-cask "google-chrome"
 cask "firefox"
+cask "microsoft-edge"
 cask "vagrant"
 cask "iterm2"
 brew "tomanthony/brews/itermocil"
@@ -99,6 +96,6 @@ cask "keepingyouawake"
 cask "postman"
 
 # Communication
-cask "zoomus"
+cask "zoom"
 
 mas "Xcode", id: 497799835
